@@ -58,7 +58,7 @@
 <h1>User Profile</h1>
 <div class="container">
     <p id="usernameMessage">Hi, [username]</p>
-<!--    <button onclick="logout()">Logout</button>-->
+    <button onclick="logout()">Logout</button>
 </div>
 
 <script>
@@ -69,11 +69,11 @@
     const usernameMessage = document.getElementById('usernameMessage');
     usernameMessage.textContent = `Hi, ${username}`;
 
-    // function logout() {
-    //     // Perform any necessary logout logic (e.g., clearing session)
-    //     // Then redirect to the login page
-    //     window.location.href = '/';
-    // }
+    function logout() {
+        // Perform any necessary logout logic (e.g., clearing session)
+        // Then redirect to the login page
+        window.location.href = '/logout';
+    }
 </script>
 </body>
 </html>
