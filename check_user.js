@@ -51,11 +51,11 @@ app.post('/login', async (req, res) => {
 });
 
 
-// app.get('/logout', (req, res) => {
-//     // Perform any necessary logout logic (e.g., clearing session)
-//     // Then redirect back to the login page
-//     res.redirect('http://localhost:1337/');
-// });
+app.get('/logout', (req, res) => {
+    // Perform any necessary logout logic (e.g., clearing session)
+    // Then redirect back to the login page
+    res.redirect('http://localhost:1337/');
+});
 
 
 // Serve the signup page
